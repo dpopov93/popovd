@@ -26,7 +26,7 @@ package ru.job4j.calculator;
 	 * @param first первое число
 	 * @param second второе число
 	 */
-	public void substruct(double first, double second) {
+	public void subtract(double first, double second) {
         this.result = first - second;
     }
 
