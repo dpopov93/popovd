@@ -1,6 +1,6 @@
 package ru.job4j;
 
-/**
+/**.
  * Class Класс для будущего калькулятора
  * @author dpopov93 (mailto:d.popov93@mail.ru)
  * @since 27.04.2017
@@ -9,10 +9,9 @@ package ru.job4j;
 
 public class Calculate {
 
-	/**
+	/**.
 	 * Главная функция класса Calculate
 	 * @param args первый аргумент
-	 * @return результат выполнения программы
 	 */
 	public static void main(String[] args) {
 		System.out.println("Hello World");
