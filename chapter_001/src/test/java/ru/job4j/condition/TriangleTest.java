@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -18,9 +18,9 @@ public class TriangleTest {
 	*/
     @Test
     public void whenElementOfFunction() {
-        Triangle triangle = new Triangle(new Point(1, 1), new Point(-2, 4), new Point(-2, -2));
-        double result = triangle.area();
-        double expected = 8.999999999999991;
-        assertThat(result, is(expected));
+		Triangle triangle = new Triangle(new Point(1, 1), new Point(-2, 4), new Point(-2, -2));
+		double result = triangle.area();
+		double expected = 8.99;
+		assertThat(result, closeTo(expected, 0.01));
     }
 }
