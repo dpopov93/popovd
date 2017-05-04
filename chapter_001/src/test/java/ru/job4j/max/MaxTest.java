@@ -23,4 +23,15 @@ public class MaxTest {
         int expected = 10;
         assertThat(result, is(expected));
     }
+
+	/**
+	* Test max method second override three args.
+	*/
+    @Test
+    public void whenFirstMoreThanSecondAndLessThanThree() {
+        Max max = new Max();
+		int result = max.max(10, 5, 14);
+        int expected = 14;
+        assertThat(result, is(expected));
+    }
 }
