@@ -1,5 +1,5 @@
 /**
-* Package for point and calculate point element of some function.
+* Package for Point and Triangle.
 *
 * @author Denis Popov (mailto:d.popov93@mail.ru)
 * @version $Id$
