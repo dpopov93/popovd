@@ -50,6 +50,6 @@ package ru.job4j.condition;
 	 * @return возвращает логический ответ
 	 */
 	public boolean is(int a, int b) {
-		return (this.y == (a * this.x + b)) ? true : false;
+		return (this.y == (a * this.x + b));
 	}
  }
