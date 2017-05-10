@@ -1,5 +1,5 @@
 /**
-* Package for Point and Triangle.
+* Package for loops.
 *
 * @author Denis Popov (mailto:d.popov93@mail.ru)
 * @version $Id$
