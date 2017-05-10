@@ -11,7 +11,7 @@ package ru.job4j.loop;
 	 * Функция строит шахматную доску в псевдографике
 	 * @param width ширина доски
 	 * @param height высота доски
-	 * @return факториал числа
+	 * @return строку с шахматной доской в псевдографике
 	 */
 	public String paint(int width, int height) {
 		StringBuilder result = new StringBuilder();
