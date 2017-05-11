@@ -17,18 +17,15 @@ package ru.job4j.loop;
 		StringBuilder result = new StringBuilder();
 
 		for (int i = 0; i < height; i++) {
-			String tmp = "";
-
 			for (int j = 0; j < width; j++) {
 				if ((j % 2 == 1 && i % 2 == 1) || (j % 2 == 0 && i % 2 == 0)) {
-					tmp += "X";
+					result.append("X");
 				} else {
-					tmp += "  ";
+					result.append("  ");
 				}
 			}
 
-			tmp += System.getProperty("line.separator");
-			result.append(tmp);
+			result.append(System.getProperty("line.separator"));
 		}
 
 		return result.toString();
