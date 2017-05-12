@@ -16,21 +16,19 @@ package ru.job4j.loop;
 		StringBuilder result = new StringBuilder();
 
 		for (int i = 1; i <= h; i++) {
-			for (int j = (h - 1) - i; j >= 0; j--) { // Вставляем пустые пробелы в начале
-				result.append(" ");
+			for (int j = 0; j <= (h * 2) - 2; j++) {
+				if ((j - 1 >= (((i + 1) * 2 - 1) + h - 2) / 2) || (j - 1 < (h - 1) - i)) {
+					result.append(" ");
+				} else {
+					result.append("^");
+				}
 			}
 
-			for (int j = 0; j <= i * 2 - 2; j++) { // Вставляем символы пирамиды
-				result.append("^");
+			if (i != h) {
+				result.append(System.getProperty("line.separator"));
 			}
-
-			for (int j = (h - 1) - i; j >= 0; j--) { // Вставляем пустые пробелы в конце
-				result.append(" ");
-			}
-
-			result.append(System.getProperty("line.separator"));
 		}
 
-		return result.toString().substring(0, result.toString().length() - System.getProperty("line.separator").length());
+		return result.toString();
 	}
  }
