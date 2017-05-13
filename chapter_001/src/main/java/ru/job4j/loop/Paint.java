@@ -17,7 +17,7 @@ package ru.job4j.loop;
 
 		for (int i = 1; i <= h; i++) {
 			for (int j = 0; j <= (h * 2) - 2; j++) {
-				if ((j - 1 >= (((i + 1) * 2 - 1) + h - 2) / 2) || (j - 1 < (h - 1) - i)) {
+				if (j <= h - i - 1 || j >= h + i - 1)  {
 					result.append(" ");
 				} else {
 					result.append("^");
