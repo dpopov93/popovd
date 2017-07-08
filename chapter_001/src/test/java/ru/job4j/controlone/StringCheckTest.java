@@ -13,14 +13,25 @@ import static org.junit.Assert.assertThat;
  * @since 0.1
  */
 public class StringCheckTest {
-	/**.
-	* Test for checking String contain substring.
-	*/
-    @Test
-    public void whenSubstringInOriginalString() {
-        StringCheck strChk = new StringCheck();
-        boolean result = strChk.contains("Привет", "иве");
-        boolean expected = true;
-        assertThat(result, is(expected));
-    }
+  /**.
+   * Test when String contains substring.
+   */
+  @Test
+  public void whenSubstringInOriginalStringIsTrue() {
+    StringCheck strChk = new StringCheck();
+    boolean result = strChk.contains("Привет", "иве");
+    boolean expected = true;
+    assertThat(result, is(expected));
+  }
+
+  /**.
+   * Test String not contain substring.
+   */
+  @Test
+  public void whenSubstringInOriginalStringIsFalse() {
+    StringCheck strChk = new StringCheck();
+    boolean result = strChk.contains("Новый мир!", "дорога");
+    boolean expected = false;
+    assertThat(result, is(expected));
+  }
 }
